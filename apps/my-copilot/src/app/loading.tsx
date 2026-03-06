@@ -24,7 +24,7 @@ export default function Loading() {
 
       <section className="mb-8">
         <Skeleton variant="text" width="30%" className="mb-4" />
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 shadow-sm">
           <Skeleton variant="rectangle" height={200} />
         </div>
       </section>

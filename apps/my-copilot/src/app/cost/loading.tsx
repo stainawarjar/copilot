@@ -12,12 +12,12 @@ export default function Loading() {
           <Skeleton variant="text" width="60%" />
         </div>
 
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 shadow-sm">
           <Skeleton variant="text" width="40%" className="mb-4" />
 
           <div className="space-y-4">
             {[...Array(10)].map((_, i) => (
-              <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded">
+              <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded">
                 <Skeleton variant="circle" width={40} height={40} />
                 <div className="flex-1 space-y-2">
                   <Skeleton variant="text" width="30%" />

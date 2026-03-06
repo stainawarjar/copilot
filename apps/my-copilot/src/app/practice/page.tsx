@@ -73,7 +73,7 @@ export default async function BestPractices() {
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Styrker, Begrensninger og Farer
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Copilot er kraftig, men ikke magisk. Forstå hva det gjør best, hvor det svikter, og hvilke farer du
                     må være oppmerksom på.
                   </BodyShort>
@@ -91,7 +91,7 @@ export default async function BestPractices() {
                           <span className="text-green-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Repetitivt arbeid i stor skala</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Fikse 161 skrivefeil på tvers av 100 filer, fjerne utdaterte feature flags, stor-skala
                               refaktorering
                             </BodyShort>
@@ -101,7 +101,7 @@ export default async function BestPractices() {
                           <span className="text-green-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Tester og dokumentasjon</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Genererer enhetstester, integrasjonstester, API-dokumentasjon og README-filer
                             </BodyShort>
                           </div>
@@ -110,7 +110,7 @@ export default async function BestPractices() {
                           <span className="text-green-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Feilsøking og analyse</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Fikse flaky tester, debugge produksjonsfeil, finne ytelsesflaskehalser
                             </BodyShort>
                           </div>
@@ -119,7 +119,7 @@ export default async function BestPractices() {
                           <span className="text-green-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Kodebase-analyser</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Audit av feature flags, autorisasjonsanalyse, finne forbedringsmuligheter
                             </BodyShort>
                           </div>
@@ -139,7 +139,7 @@ export default async function BestPractices() {
                           <span className="text-orange-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Arkitektur og systemdesign</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Du må eie arkitekturen – Copilot implementerer, du designer
                             </BodyShort>
                           </div>
@@ -148,7 +148,7 @@ export default async function BestPractices() {
                           <span className="text-orange-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Oppgaver med avhengigheter</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Komplekse oppgaver der steg 2 avhenger av resultatet fra steg 1
                             </BodyShort>
                           </div>
@@ -157,7 +157,7 @@ export default async function BestPractices() {
                           <span className="text-orange-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Ukjent terreng</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Når du utforsker nye teknologier eller validerer antakelser
                             </BodyShort>
                           </div>
@@ -166,7 +166,7 @@ export default async function BestPractices() {
                           <span className="text-orange-600 font-bold">•</span>
                           <div>
                             <BodyShort weight="semibold">Garantert sikker eller korrekt kode</BodyShort>
-                            <BodyShort className="text-gray-600 text-sm">
+                            <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                               Du må alltid gjennomgå og teste – AI kan og vil gjøre feil
                             </BodyShort>
                           </div>
@@ -192,19 +192,19 @@ export default async function BestPractices() {
                       <div className="space-y-3">
                         <div>
                           <BodyShort weight="semibold">Scope creep</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Agenten refaktorerer kode du ikke ba om, eller &quot;forbedrer&quot; ting utenfor oppgaven
                           </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold">Sirkulær atferd</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Agenten prøver samme feilende tilnærming flere ganger uten å justere
                           </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold">Hallusinasjoner</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Copilot kan finne på API-er, funksjoner eller biblioteker som ikke eksisterer
                           </BodyShort>
                         </div>
@@ -212,19 +212,19 @@ export default async function BestPractices() {
                       <div className="space-y-3">
                         <div>
                           <BodyShort weight="semibold">Prompt injection</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Ondsinnet innhold i issues eller filer kan manipulere agentens oppførsel
                           </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold">Konteksttap</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Lange chat-sesjoner kan føre til at Copilot &quot;glemmer&quot; tidligere kontekst
                           </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold">Over-engineering</BodyShort>
-                          <BodyShort className="text-gray-600 text-sm">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                             Copilot kan generere unødvendig kompleks kode for enkle problemer
                           </BodyShort>
                         </div>
@@ -240,7 +240,7 @@ export default async function BestPractices() {
                         GitHubs sikkerhetsprinsipper for agenter
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                       GitHub har bygget inn disse sikkerhetsprinsippene i Copilot coding agent:
                     </BodyShort>
                     <HGrid columns={{ xs: 1, sm: 2, lg: 3 }} gap="space-12">
@@ -248,7 +248,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Synlig kontekst
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Kun synlig innhold sendes til agenten, usynlig Unicode/HTML fjernes
                         </BodyShort>
                       </div>
@@ -256,7 +256,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Begrenset tilgang
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Agenten får ikke CI-hemmeligheter eller filer utenfor repo
                         </BodyShort>
                       </div>
@@ -264,7 +264,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Ingen irreversible endringer
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Kun PR-er, aldri direkte commits til main
                         </BodyShort>
                       </div>
@@ -272,7 +272,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Sporbarhet
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Alle handlinger attribueres til både bruker og agent
                         </BodyShort>
                       </div>
@@ -280,7 +280,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Firewall
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Nettverkstilgang er begrenset, konfigurerbar per org
                         </BodyShort>
                       </div>
@@ -288,7 +288,7 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm">
                           Autoriserte brukere
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Kun brukere med write-tilgang kan tildele agenten issues
                         </BodyShort>
                       </div>
@@ -305,7 +305,7 @@ export default async function BestPractices() {
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Verktøy og Moduser
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     GitHub Copilot er ikke bare kodeforslag i editoren. Det er et økosystem av verktøy som spenner fra
                     sanntidsforslag til autonome agenter som jobber i bakgrunnen.
                   </BodyShort>
@@ -356,7 +356,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Kodeforslag (Completions)
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Sanntidsforslag mens du skriver. Tab for å godta, Esc for å avvise.
                           </BodyShort>
                         </div>
@@ -364,7 +364,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Chat (⌘+I / Ctrl+I)
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Still spørsmål, generér kode, få forklaringer. Bruk @workspace for prosjektkontekst.
                           </BodyShort>
                         </div>
@@ -372,7 +372,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Agent Mode
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Multifil-endringer, kjør kommandoer, iterér på feil. Mer autonomt enn chat.
                           </BodyShort>
                         </div>
@@ -380,7 +380,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Godkjenninger
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Agent spør om godkjenning før terminalkommandoer og nettsidefetching.
                           </BodyShort>
                         </div>
@@ -411,7 +411,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Coding Agent
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Tildel en issue til @copilot, agenten lager PR i bakgrunnen. Perfekt for backlog.
                           </BodyShort>
                         </div>
@@ -419,7 +419,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Mission Control
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Dashboard for å spore Copilot-oppgaver på tvers av repoer. Se fremdrift, session logs, og
                             styr agenten underveis. Tilgjengelig via{" "}
                             <a
@@ -437,7 +437,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Code Review
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Legg til @copilot som reviewer på PR-er. Tilpass med instructions-filer.
                           </BodyShort>
                         </div>
@@ -445,7 +445,7 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             Copilot Spaces
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Del kontekst med teamet for raskere debugging og samarbeid.
                           </BodyShort>
                         </div>
@@ -476,18 +476,25 @@ export default async function BestPractices() {
                           <BodyShort weight="semibold" className="text-sm">
                             copilot
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Agentic CLI – build, debug, refactor kode med naturlig språk direkte i terminalen.
                           </BodyShort>
                         </div>
                         <Box background="default" padding="space-8" borderRadius="4">
                           <code className="text-xs block">copilot</code>
-                          <code className="text-xs block mt-1 text-gray-500"># Åpner interaktiv agent-modus</code>
+                          <code className="text-xs block mt-1 text-gray-500 dark:text-gray-400">
+                            # Åpner interaktiv agent-modus
+                          </code>
                         </Box>
-                        <BodyShort className="text-gray-500 text-xs">
-                          Installer: <code className="bg-gray-100 px-1 rounded">brew install copilot-cli</code>{" "}
-                          <code className="bg-gray-100 px-1 rounded">winget install GitHub.Copilot</code>{" "}
-                          <code className="bg-gray-100 px-1 rounded">npm install -g @github/copilot</code>
+                        <BodyShort className="text-gray-500 dark:text-gray-400 text-xs">
+                          Installer:{" "}
+                          <code className="bg-gray-100 dark:bg-gray-900 px-1 rounded">brew install copilot-cli</code>{" "}
+                          <code className="bg-gray-100 dark:bg-gray-900 px-1 rounded">
+                            winget install GitHub.Copilot
+                          </code>{" "}
+                          <code className="bg-gray-100 dark:bg-gray-900 px-1 rounded">
+                            npm install -g @github/copilot
+                          </code>
                         </BodyShort>
                       </div>
                     </Box>
@@ -506,11 +513,11 @@ export default async function BestPractices() {
                         MCP (Model Context Protocol)
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-2">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                       Utvid Copilot med eksterne verktøy via MCP-servere. Tilgjengelig i Agent Mode (VS Code), Copilot
                       CLI og Coding Agent på GitHub.com.
                     </BodyShort>
-                    <BodyShort className="text-gray-600 text-sm mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                       Nav har en{" "}
                       <a
                         href="https://mcp-registry.intern.dev.nav.no"
@@ -529,7 +536,7 @@ export default async function BestPractices() {
     }
   }
 }`}</CodeBlock>
-                    <BodyShort className="text-gray-600 text-xs mt-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-3">
                       Nav har også en{" "}
                       <a
                         href="https://mcp-onboarding.intern.dev.nav.no"
@@ -551,7 +558,7 @@ export default async function BestPractices() {
                         Modellvalg og kostnader
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                       Du har <strong>300 premium requests</strong> per måned. <strong>Auto</strong> gir 10 % rabatt og
                       velger beste modell automatisk. Multiplikatoren (1x, 3x, 0.33x) viser hvor mange requests som
                       trekkes per forespørsel.
@@ -561,34 +568,42 @@ export default async function BestPractices() {
                         <Label size="small" className="text-green-700">
                           Auto (10 % rabatt)
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Anbefalt – velger optimal modell automatisk
                         </BodyShort>
                       </div>
                       <div>
                         <Label size="small">Claude Sonnet 4 / 4.5</Label>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Balansert – god til de fleste oppgaver (1x)
                         </BodyShort>
                       </div>
                       <div>
                         <Label size="small">Claude Opus 4.5</Label>
-                        <BodyShort className="text-gray-600 text-xs">Kraftigst – komplekse oppgaver (3x)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Kraftigst – komplekse oppgaver (3x)
+                        </BodyShort>
                       </div>
                       <div>
                         <Label size="small">GPT-5.1 / 5.2</Label>
-                        <BodyShort className="text-gray-600 text-xs">OpenAI – bred kunnskap (1x)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          OpenAI – bred kunnskap (1x)
+                        </BodyShort>
                       </div>
                       <div>
                         <Label size="small">Gemini 2.5 Pro / 3 Pro</Label>
-                        <BodyShort className="text-gray-600 text-xs">Google – stor kontekst (1x)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Google – stor kontekst (1x)
+                        </BodyShort>
                       </div>
                       <div>
                         <Label size="small">Haiku 4.5 / Gemini Flash</Label>
-                        <BodyShort className="text-gray-600 text-xs">Raske – enklere oppgaver (0.33x)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Raske – enklere oppgaver (0.33x)
+                        </BodyShort>
                       </div>
                     </HGrid>
-                    <BodyShort className="text-gray-500 text-xs mt-3">
+                    <BodyShort className="text-gray-500 dark:text-gray-400 text-xs mt-3">
                       Se{" "}
                       <a
                         href="https://docs.github.com/en/copilot/managing-copilot/monitoring-usage-and-entitlements/about-premium-requests"
@@ -612,7 +627,7 @@ export default async function BestPractices() {
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Forbered for Suksess
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Tilpass Copilot til ditt prosjekt med instruksjonsfiler. Jo bedre kontekst du gir, jo bedre
                     resultater får du.
                   </BodyShort>
@@ -634,7 +649,7 @@ export default async function BestPractices() {
                         koden din.
                       </HelpText>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mt-2">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mt-2">
                       <strong>Anbefaling:</strong> Skriv beskrivelser og kommentarer på norsk hvis det passer teamet.
                       Hold kode, kommandoer, variabelnavn og tekniske termer på engelsk. Dette matcher vanlig praksis i
                       norske utviklingsmiljøer og sikrer at Copilot forstår koden din korrekt.
@@ -659,11 +674,11 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm text-green-700 mb-2">
                           1. AGENTS.md (repo-rot)
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs mb-2">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-2">
                           En universell kontekstfil som fungerer med Copilot, Claude Code, Codex og andre agenter.
                           Beskriv tech stack, bygg-kommandoer, kodestil og grenser.
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Tenk på det som onboarding-dokumentet for en ny utvikler – det er nøyaktig det AI-agenter
                           trenger for å forstå prosjektet ditt.
                         </BodyShort>
@@ -672,17 +687,20 @@ export default async function BestPractices() {
                         <BodyShort weight="semibold" className="text-sm text-green-700 mb-2">
                           2. copilot-setup-steps.yml
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs mb-2">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-2">
                           GitHub Actions workflow som klargjør miljøet for Copilot coding agent. Uten denne filen kan
                           ikke coding agent bygge eller teste koden din.
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Plasseres i{" "}
-                          <code className="bg-gray-100 px-1 rounded">.github/workflows/copilot-setup-steps.yml</code>.
+                          <code className="bg-gray-100 dark:bg-gray-900 px-1 rounded">
+                            .github/workflows/copilot-setup-steps.yml
+                          </code>
+                          .
                         </BodyShort>
                       </Box>
                     </HGrid>
-                    <BodyShort className="text-gray-600 text-xs mt-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-3">
                       Bruk{" "}
                       <a
                         href="https://mcp-onboarding.intern.dev.nav.no"
@@ -709,7 +727,7 @@ export default async function BestPractices() {
                         Fire typer tilpasninger
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-xs mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-3">
                       GitHub Copilot kan tilpasses på fire måter. Se{" "}
                       <a
                         href="https://github.com/github/awesome-copilot"
@@ -726,7 +744,7 @@ export default async function BestPractices() {
                         <Label size="small" className="text-blue-700">
                           Prompts
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           <strong>Når:</strong> Engangsoppgaver
                           <br />
                           <strong>Aktivering:</strong> /prompt-name i chat
@@ -740,7 +758,7 @@ export default async function BestPractices() {
                         <Label size="small" className="text-green-700">
                           Instructions
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           <strong>Når:</strong> Alltid aktiv
                           <br />
                           <strong>Aktivering:</strong> Automatisk på matchende filer
@@ -755,7 +773,7 @@ export default async function BestPractices() {
                         <Label size="small" className="text-orange-700">
                           Agents
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           <strong>Når:</strong> Spesialiserte oppgaver
                           <br />
                           <strong>Aktivering:</strong> @agent-name
@@ -769,7 +787,7 @@ export default async function BestPractices() {
                         <Label size="small" className="text-purple-700">
                           Skills
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           <strong>Når:</strong> Automatisk ved behov
                           <br />
                           <strong>Aktivering:</strong> Automatisk når relevant
@@ -792,7 +810,9 @@ export default async function BestPractices() {
                             Prompts (Engangsoppgaver)
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">Aktiver med /prompt-name i chat.</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Aktiver med /prompt-name i chat.
+                        </BodyShort>
                         <CodeBlock filename=".github/prompts/create-readme.prompt.md" maxHeight="350px">{`---
 name: create-readme
 description: Generates a comprehensive README for a project
@@ -826,7 +846,9 @@ Follow the structure used in popular open-source projects.`}</CodeBlock>
                             Repository Instructions
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">Gjelder hele repoet, leses automatisk.</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Gjelder hele repoet, leses automatisk.
+                        </BodyShort>
                         <CodeBlock
                           filename=".github/copilot-instructions.md"
                           maxHeight="350px"
@@ -857,7 +879,7 @@ Follow the structure used in popular open-source projects.`}</CodeBlock>
                             AGENTS.md (universell)
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Fungerer med Copilot, Claude Code, Codex og andre agenter.
                         </BodyShort>
                         <CodeBlock filename="AGENTS.md" maxHeight="350px">{`# AGENTS.md — mitt-prosjekt
@@ -903,7 +925,7 @@ Backend-tjeneste for brukeradministrasjon.
                             Copilot Setup Steps
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Klargjør miljøet for Copilot coding agent.
                         </BodyShort>
                         <CodeBlock
@@ -934,7 +956,7 @@ jobs:
                             Custom Agents
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Spesialiserte agenter med YAML frontmatter.
                         </BodyShort>
                         <CodeBlock filename=".github/agents/test-agent.agent.md" maxHeight="350px">{`---
@@ -970,7 +992,9 @@ Du er en erfaren QA-ingeniør som skriver tester.
                             Path-Specific Instructions
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">Brukes av Copilot Code Review.</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Brukes av Copilot Code Review.
+                        </BodyShort>
                         <CodeBlock filename=".github/instructions/ts.instructions.md" maxHeight="350px">{`---
 applyTo: "**/*.ts"
 ---
@@ -1009,7 +1033,7 @@ async function get(x) {
                             Agent Skills
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Automatisk lastet når relevant. Støtter skript og ressurser.
                         </BodyShort>
                         <CodeBlock filename=".github/skills/pdf-extractor/SKILL.md" maxHeight="350px">{`---
@@ -1061,7 +1085,7 @@ Return extracted data as structured JSON:
                           Seks kjerneområder (fra 2500+ repos)
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                         Analyse av over 2500 agents.md-filer viser at de beste dekker disse områdene:
                       </BodyShort>
                       <HGrid columns={{ xs: 1, sm: 2, lg: 3 }} gap="space-12">
@@ -1069,7 +1093,7 @@ Return extracted data as structured JSON:
                           <BodyShort weight="semibold" className="text-sm">
                             1. Kommandoer
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Kjørbare kommandoer tidlig: npm test, pnpm build
                           </BodyShort>
                         </div>
@@ -1077,7 +1101,7 @@ Return extracted data as structured JSON:
                           <BodyShort weight="semibold" className="text-sm">
                             2. Testing
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Testrammeverk, hvor tester ligger, coverage
                           </BodyShort>
                         </div>
@@ -1085,25 +1109,33 @@ Return extracted data as structured JSON:
                           <BodyShort weight="semibold" className="text-sm">
                             3. Prosjektstruktur
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">Mappestruktur, hvor kode hører hjemme</BodyShort>
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                            Mappestruktur, hvor kode hører hjemme
+                          </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold" className="text-sm">
                             4. Kodestil
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">Kodeeksempler over forklaringer</BodyShort>
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                            Kodeeksempler over forklaringer
+                          </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold" className="text-sm">
                             5. Git-workflow
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">Branch-strategi, commit-meldinger</BodyShort>
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                            Branch-strategi, commit-meldinger
+                          </BodyShort>
                         </div>
                         <div>
                           <BodyShort weight="semibold" className="text-sm">
                             6. Grenser
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">Hva agenten aldri skal gjøre</BodyShort>
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                            Hva agenten aldri skal gjøre
+                          </BodyShort>
                         </div>
                       </HGrid>
                     </Box>
@@ -1122,7 +1154,7 @@ Return extracted data as structured JSON:
                         Er repoet ditt agent-klart?
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-xs mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-3">
                       Sjekk disse punktene for å gjøre repoet ditt klart for AI-agenter. Tilpasninger + verifikasjon =
                       14 poeng totalt.
                     </BodyShort>
@@ -1134,49 +1166,63 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-xs">
                           AGENTS.md
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Universell kontekst (alle agenter)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Universell kontekst (alle agenter)
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           copilot-setup-steps.yml
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Coding agent miljøoppsett</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Coding agent miljøoppsett
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           copilot-instructions.md
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Copilot-spesifikke instruksjoner</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Copilot-spesifikke instruksjoner
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           .github/instructions/
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Filtype-spesifikke regler</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Filtype-spesifikke regler
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           .github/agents/
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Spesialiserte agenter</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Spesialiserte agenter
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           .github/prompts/
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Gjenbrukbare prompts</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">Gjenbrukbare prompts</BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           .github/skills/
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Kapabiliteter med skript</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Kapabiliteter med skript
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           .github/hooks/
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Automatisk lint/format</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Automatisk lint/format
+                        </BodyShort>
                       </div>
                     </HGrid>
                     <BodyShort weight="semibold" className="text-xs mb-2">
@@ -1187,7 +1233,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-xs">
                           CI/CD workflows
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Automatisert bygg og test i GitHub Actions
                         </BodyShort>
                       </div>
@@ -1195,13 +1241,15 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-xs">
                           Linter-konfigurasjon
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">ESLint, golangci-lint, detekt</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          ESLint, golangci-lint, detekt
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           Typesjekking
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           tsconfig.json, Go/Kotlin/Rust (innebygd)
                         </BodyShort>
                       </div>
@@ -1209,19 +1257,25 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-xs">
                           Testkonfigurasjon
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Jest, Vitest, eller innebygd (Go, JVM)</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Jest, Vitest, eller innebygd (Go, JVM)
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           Dependabot
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Automatiske avhengighetsoppdateringer</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Automatiske avhengighetsoppdateringer
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-xs">
                           README.md
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Dokumentasjon agenter leser først</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Dokumentasjon agenter leser først
+                        </BodyShort>
                       </div>
                     </HGrid>
                   </Box>
@@ -1236,7 +1290,7 @@ Return extracted data as structured JSON:
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Skriv Effektive Tilpasninger
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Nå som du vet hvilke tilpasningstyper som finnes, her er konkrete råd for å skrive dem godt. Kilde:{" "}
                     <a
                       href="https://code.visualstudio.com/docs/copilot/customization/overview"
@@ -1279,7 +1333,7 @@ Return extracted data as structured JSON:
                         Instructions
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-4">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                       Instructions definerer kodestil og regler som alltid gjelder. Tenk på dem som teamets stilguide –
                       korte, konkrete og sjelden i endring. Se{" "}
                       <a
@@ -1296,7 +1350,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-sm text-green-700 mb-2">
                           Gode mønstre
                         </BodyShort>
-                        <ul className="space-y-2 text-xs text-gray-600">
+                        <ul className="space-y-2 text-xs text-gray-600 dark:text-gray-400">
                           <li className="flex gap-2">
                             <CheckmarkCircleIcon
                               className="text-green-600 shrink-0 mt-0.5"
@@ -1338,7 +1392,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-sm text-red-700 mb-2">
                           Vanlige feil
                         </BodyShort>
-                        <ul className="space-y-2 text-xs text-gray-600">
+                        <ul className="space-y-2 text-xs text-gray-600 dark:text-gray-400">
                           <li className="flex gap-2">
                             <XMarkOctagonIcon className="text-red-600 shrink-0 mt-0.5" fontSize="1rem" aria-hidden />
                             <span>For lange filer – hold det fokusert, hopp over ting linteren allerede sjekker</span>
@@ -1362,7 +1416,7 @@ Return extracted data as structured JSON:
                       <BodyShort weight="semibold" className="text-sm mb-2">
                         Prioritet (ved konflikt)
                       </BodyShort>
-                      <BodyShort className="text-gray-600 text-xs">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                         1. Personlige instruksjoner (bruker-nivå) → 2. Repository-instruksjoner (copilot-instructions.md
                         / AGENTS.md) → 3. Organisasjons-instruksjoner. Høyere prioritet vinner.
                       </BodyShort>
@@ -1382,7 +1436,7 @@ Return extracted data as structured JSON:
                         Custom Agents
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-4">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                       Agenter er spesialiserte roller med eget verktøysett og instruksjoner. Nøkkelen er spesifisitet –
                       en god agent har én jobb, ikke ti. Se{" "}
                       <a
@@ -1409,7 +1463,7 @@ Return extracted data as structured JSON:
                     </BodyShort>
                     <HGrid columns={{ xs: 1, md: 2 }} gap="space-16" className="mb-4">
                       <Box background="default" padding="space-12" borderRadius="4">
-                        <ol className="space-y-2 text-xs text-gray-600 list-decimal list-inside">
+                        <ol className="space-y-2 text-xs text-gray-600 dark:text-gray-400 list-decimal list-inside">
                           <li>
                             <strong>YAML-frontmatter</strong> – name, description, tools
                           </li>
@@ -1434,7 +1488,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-sm mb-2">
                           YAML-frontmatter felter
                         </BodyShort>
-                        <ul className="space-y-1 text-xs text-gray-600">
+                        <ul className="space-y-1 text-xs text-gray-600 dark:text-gray-400">
                           <li>
                             <strong>description</strong> – kort beskrivelse (vises som placeholder i chat)
                           </li>
@@ -1458,7 +1512,7 @@ Return extracted data as structured JSON:
                       <BodyShort weight="semibold" className="text-sm text-red-700 mb-1">
                         Vanligste feilen
                       </BodyShort>
-                      <BodyShort className="text-gray-600 text-xs">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                         &quot;You are a helpful coding assistant&quot; fungerer ikke. &quot;You are a test engineer who
                         writes tests for React components, follows these examples, and never modifies source code&quot;
                         fungerer. Spesifisitet slår generalitet.
@@ -1479,7 +1533,7 @@ Return extracted data as structured JSON:
                         Agent Skills
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-4">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                       Skills er gjenbrukbare kapabiliteter med skript og ressurser som Copilot laster automatisk når de
                       er relevante. Åpen standard via{" "}
                       <a
@@ -1506,7 +1560,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-sm text-blue-700 mb-2">
                           Progressive disclosure
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Copilot laster kun det som trengs i tre nivåer: 1) name + description (alltid synlig), 2)
                           SKILL.md body (ved match), 3) scripts/resources (ved referanse). Installer mange skills uten å
                           bruke kontekst.
@@ -1528,7 +1582,7 @@ Return extracted data as structured JSON:
                         <BodyShort weight="semibold" className="text-sm text-blue-700 mb-2">
                           Invokering
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Skills kan både brukes som /slash-commands og lastes automatisk basert på description-match.
                           Kontroller med user-invokable og disable-model-invocation i frontmatter.
                         </BodyShort>
@@ -1540,7 +1594,7 @@ Return extracted data as structured JSON:
                         Tips for gode skills
                       </BodyShort>
                       <HGrid columns={{ xs: 1, sm: 2 }} gap="space-16">
-                        <ul className="space-y-2 text-xs text-gray-600">
+                        <ul className="space-y-2 text-xs text-gray-600 dark:text-gray-400">
                           <li className="flex gap-2">
                             <CheckmarkCircleIcon
                               className="text-green-600 shrink-0 mt-0.5"
@@ -1566,7 +1620,7 @@ Return extracted data as structured JSON:
                             <span>name i frontmatter må matche mappenavnet</span>
                           </li>
                         </ul>
-                        <ul className="space-y-2 text-xs text-gray-600">
+                        <ul className="space-y-2 text-xs text-gray-600 dark:text-gray-400">
                           <li className="flex gap-2">
                             <CheckmarkCircleIcon
                               className="text-green-600 shrink-0 mt-0.5"
@@ -1629,7 +1683,7 @@ Return extracted data as structured JSON:
                         <Label size="small" className="text-green-700">
                           Instructions
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           Kodestil, navnekonvensjoner, sikkerhetsregler. Start med én copilot-instructions.md, utvid med
                           *.instructions.md per språk.
                         </BodyShort>
@@ -1638,7 +1692,7 @@ Return extracted data as structured JSON:
                         <Label size="small" className="text-blue-700">
                           Agents
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           Spesialiserte roller som @test-agent, @docs-agent. Når du trenger eget verktøysett og persona.
                           Støtter handoffs mellom agenter.
                         </BodyShort>
@@ -1647,7 +1701,7 @@ Return extracted data as structured JSON:
                         <Label size="small" className="text-purple-700">
                           Skills
                         </Label>
-                        <BodyShort className="text-gray-600 text-xs mt-1">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mt-1">
                           Gjenbrukbare kapabiliteter med skript. Når du trenger portabilitet på tvers av VS Code, CLI og
                           Coding Agent.
                         </BodyShort>
@@ -1665,7 +1719,7 @@ Return extracted data as structured JSON:
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Prompt Engineering
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Hvordan du formulerer forespørselen påvirker kvaliteten på Copilots svar. Spesifisitet er nøkkelen.
                   </BodyShort>
 
@@ -1687,7 +1741,7 @@ Return extracted data as structured JSON:
                           <BodyShort weight="semibold" className="text-red-700 mb-2">
                             ❌ Vag
                           </BodyShort>
-                          <code className="text-sm bg-white p-2 block rounded whitespace-pre-wrap">
+                          <code className="text-sm bg-white dark:bg-gray-800 p-2 block rounded whitespace-pre-wrap">
                             {`Fix the authentication bug.`}
                           </code>
                         </Box>
@@ -1701,7 +1755,7 @@ Return extracted data as structured JSON:
                           <BodyShort weight="semibold" className="text-green-700 mb-2">
                             ✓ Spesifikk
                           </BodyShort>
-                          <code className="text-sm bg-white p-2 block rounded whitespace-pre-wrap">
+                          <code className="text-sm bg-white dark:bg-gray-800 p-2 block rounded whitespace-pre-wrap">
                             {`Users report 'Invalid token' errors
 after 30 minutes. JWT tokens are
 configured with 1-hour expiration
@@ -1730,7 +1784,7 @@ validation logic in middleware/auth.ts`}
                           <BodyShort weight="semibold" className="text-red-700 mb-2">
                             ❌ Uten eksempel
                           </BodyShort>
-                          <code className="text-sm bg-white p-2 block rounded whitespace-pre-wrap">
+                          <code className="text-sm bg-white dark:bg-gray-800 p-2 block rounded whitespace-pre-wrap">
                             {`Write a function that formats
 currency in Norwegian style`}
                           </code>
@@ -1745,7 +1799,7 @@ currency in Norwegian style`}
                           <BodyShort weight="semibold" className="text-green-700 mb-2">
                             ✓ Med eksempel
                           </BodyShort>
-                          <code className="text-sm bg-white p-2 block rounded whitespace-pre-wrap">
+                          <code className="text-sm bg-white dark:bg-gray-800 p-2 block rounded whitespace-pre-wrap">
                             {`Write a TypeScript function that
 formats numbers as Norwegian currency.
 
@@ -1763,13 +1817,13 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <span className="text-blue-600">3.</span>
                         Bryt ned komplekse oppgaver
                       </Heading>
-                      <BodyShort className="text-gray-600 mb-4">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 mb-4">
                         Store oppgaver bør deles i mindre steg. Bruk <strong>Plan Mode</strong> for å la Copilot
                         analysere oppgaven og foreslå en plan før implementering.
                       </BodyShort>
 
                       {/* Plan Mode Image */}
-                      <div className="mb-4 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative aspect-video">
+                      <div className="mb-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm relative aspect-video">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src="/images/copilot-in-vs-code-hero-plan-mode.jpeg"
@@ -1784,10 +1838,10 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                             <TasklistIcon className="text-blue-600" aria-hidden />
                             <BodyShort weight="semibold">Plan Mode</BodyShort>
                           </div>
-                          <BodyShort className="text-gray-600 text-sm mb-2">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                             Aktiver med &quot;/plan&quot; eller velg Plan i modusvelgeren. Copilot vil:
                           </BodyShort>
-                          <ol className="space-y-1 list-decimal list-inside text-xs text-gray-600">
+                          <ol className="space-y-1 list-decimal list-inside text-xs text-gray-600 dark:text-gray-400">
                             <li>Analysere oppgaven og konteksten</li>
                             <li>Foreslå en detaljert plan med steg</li>
                             <li>La deg godkjenne eller justere planen</li>
@@ -1809,7 +1863,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                       </HGrid>
 
                       <Box background="warning-soft" padding="space-12" borderRadius="8" className="mt-3">
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           <strong>Tips:</strong> For coding agent på GitHub.com, skriv issues med klare akseptkriterier
                           og bruk sub-issues for store oppgaver. Se{" "}
                           <a
@@ -1832,18 +1886,23 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                             Spec Kit – Strukturert planlegging
                           </BodyShort>
                         </div>
-                        <BodyShort className="text-gray-600 text-xs mb-2">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-2">
                           GitHubs offisielle verktøy for &quot;Spec-Driven Development&quot;. Skriv spesifikasjoner
                           først, la Copilot implementere. Støtter slash-commands:
                         </BodyShort>
                         <div className="flex flex-wrap gap-2 mb-2">
-                          <code className="text-xs bg-white px-2 py-1 rounded">/speckit.specify</code>
-                          <code className="text-xs bg-white px-2 py-1 rounded">/speckit.plan</code>
-                          <code className="text-xs bg-white px-2 py-1 rounded">/speckit.tasks</code>
-                          <code className="text-xs bg-white px-2 py-1 rounded">/speckit.implement</code>
+                          <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded">/speckit.specify</code>
+                          <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded">/speckit.plan</code>
+                          <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded">/speckit.tasks</code>
+                          <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded">
+                            /speckit.implement
+                          </code>
                         </div>
-                        <BodyShort className="text-gray-500 text-xs">
-                          Installer: <code className="bg-white px-1 rounded">specify init my-project --ai copilot</code>{" "}
+                        <BodyShort className="text-gray-500 dark:text-gray-400 text-xs">
+                          Installer:{" "}
+                          <code className="bg-white dark:bg-gray-800 px-1 rounded">
+                            specify init my-project --ai copilot
+                          </code>{" "}
                           –{" "}
                           <a
                             href="https://github.com/github/spec-kit"
@@ -1898,7 +1957,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           <BodyShort weight="semibold" className="text-sm">
                             Vage direktiver
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             &quot;Be more accurate&quot; eller &quot;Identify all issues&quot; – Copilot gjør allerede
                             sitt beste
                           </BodyShort>
@@ -1907,7 +1966,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           <BodyShort weight="semibold" className="text-sm">
                             Eksterne lenker
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Copilot følger ikke lenker – kopier relevant innhold inn i prompten
                           </BodyShort>
                         </div>
@@ -1915,7 +1974,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           <BodyShort weight="semibold" className="text-sm">
                             Tvetydige referanser
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             &quot;Fix this&quot; eller &quot;What does it do?&quot; – vær eksplisitt om hva du refererer
                             til
                           </BodyShort>
@@ -1924,7 +1983,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           <BodyShort weight="semibold" className="text-sm">
                             UX-endringer
                           </BodyShort>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Du kan ikke endre fonter eller formatering på Copilot-kommentarer
                           </BodyShort>
                         </div>
@@ -1942,7 +2001,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                   <LinkableHeading size="large" level="2" className="mb-4">
                     WRAP-metoden for Coding Agent
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     WRAP er en enkel huskeregel for å få mest mulig ut av Copilot coding agent. Tenk på det som å
                     onboarde en ny kollega.
                   </BodyShort>
@@ -1960,7 +2019,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Write
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 mb-3">
                         Skriv issues som om du forklarer til en ny utvikler på teamet.
                       </BodyShort>
                       <Box background="default" padding="space-8" borderRadius="4">
@@ -1988,7 +2047,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Refine
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 mb-3">
                         Forbedre med copilot-instructions.md og agents.md for konsistente resultater.
                       </BodyShort>
                       <ul className="space-y-1 text-sm">
@@ -2019,7 +2078,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Atomic
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 mb-3">
                         Bryt ned i små, uavhengige oppgaver som kan kjøres parallelt.
                       </BodyShort>
                       <ul className="space-y-1 text-sm">
@@ -2054,7 +2113,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Pair
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 mb-3">
                         Jobb sammen med agenten – du eier arkitekturen, den implementerer.
                       </BodyShort>
                       <ul className="space-y-1 text-sm">
@@ -2082,7 +2141,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         Hva GitHub bruker Copilot til internt
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                       GitHub bruker Copilot coding agent aktivt på github.com-kodebasen:
                     </BodyShort>
                     <HGrid columns={{ xs: 1, sm: 2, lg: 3 }} gap="space-12">
@@ -2090,7 +2149,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Opprydding
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Fjerne utdaterte feature flags, fikse 161 skrivefeil på tvers av 100 filer
                         </BodyShort>
                       </div>
@@ -2098,7 +2157,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Refaktorering
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Gi nytt navn til klasser brukt overalt i kodebasen
                         </BodyShort>
                       </div>
@@ -2106,7 +2165,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Feilretting
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Fikse flaky tester, produksjonsfeil, ytelsesproblemer
                         </BodyShort>
                       </div>
@@ -2114,13 +2173,15 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Nye features
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Nye API-endepunkter, interne verktøy</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Nye API-endepunkter, interne verktøy
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-sm">
                           Migrasjoner
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Database-skjemaendringer, sikkerhetsgates
                         </BodyShort>
                       </div>
@@ -2128,7 +2189,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Analyser
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Audit av feature flags, autorisasjonsanalyse
                         </BodyShort>
                       </div>
@@ -2145,13 +2206,13 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Orkestrer og Styr Agenter
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Med Copilot coding agent jobber du som en &quot;mission control&quot; – du styrer oppgaver,
                     overvåker fremdrift og griper inn ved behov.
                   </BodyShort>
 
                   {/* Mission Control Hero Image */}
-                  <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative aspect-video">
+                  <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm relative aspect-video">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/agents-on-github-hero-mission-control.jpeg"
@@ -2170,7 +2231,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                             Parallelt (uavhengige oppgaver)
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-sm mb-2">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                           Start flere agenter samtidig når oppgavene ikke påvirker hverandre:
                         </BodyShort>
                         <ul className="space-y-1 text-xs">
@@ -2200,7 +2261,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                             Sekvensielt (avhengige oppgaver)
                           </Heading>
                         </div>
-                        <BodyShort className="text-gray-600 text-sm mb-2">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                           Vent på én agent før du starter neste:
                         </BodyShort>
                         <ul className="space-y-1 text-xs">
@@ -2232,7 +2293,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Les agentens signaler
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-3">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                         Session logs viser agentens tankegang. Se etter disse tegnene:
                       </BodyShort>
                       <HGrid columns={{ xs: 1, sm: 2, lg: 3 }} gap="space-12">
@@ -2243,7 +2304,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               På rett spor
                             </BodyShort>
                           </div>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Bruker riktige filer, følger kodestil, kjører tester
                           </BodyShort>
                         </div>
@@ -2254,7 +2315,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               Sporet av
                             </BodyShort>
                           </div>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Gjør mer enn oppgaven, redigerer irrelevante filer, går i loops
                           </BodyShort>
                         </div>
@@ -2265,7 +2326,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               Stopp og ta over
                             </BodyShort>
                           </div>
-                          <BodyShort className="text-gray-600 text-xs">
+                          <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                             Feil etter feil, hallusinerer APIs, trenger domenekunnskap
                           </BodyShort>
                         </div>
@@ -2288,7 +2349,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               <BodyShort weight="semibold" className="text-sm">
                                 Kommenter på PR-en
                               </BodyShort>
-                              <BodyShort className="text-gray-600 text-xs">
+                              <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                                 &quot;Ikke endre config.ts – fokuser kun på UserService&quot;
                               </BodyShort>
                             </div>
@@ -2299,7 +2360,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               <BodyShort weight="semibold" className="text-sm">
                                 Gjør manuell endring + be om å fortsette
                               </BodyShort>
-                              <BodyShort className="text-gray-600 text-xs">
+                              <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                                 Fiks feil selv, push, og skriv &quot;Fikset typen, vennligst fortsett med resten&quot;
                               </BodyShort>
                             </div>
@@ -2310,14 +2371,14 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                               <BodyShort weight="semibold" className="text-sm">
                                 Bryt opp oppgaven
                               </BodyShort>
-                              <BodyShort className="text-gray-600 text-xs">
+                              <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                                 Lukk issue, lag flere mindre issues, tildel på nytt
                               </BodyShort>
                             </div>
                           </div>
                         </div>
                         {/* Session log screenshot */}
-                        <div className="rounded-lg overflow-hidden border border-gray-200 shadow-sm relative aspect-video">
+                        <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm relative aspect-video">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src="/images/chat-reasoning.png"
@@ -2339,12 +2400,12 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Gjennomgå Copilots Arbeid
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Copilot coding agent lager PR-er som trenger grundig gjennomgang. Bruk en tre-trinns sjekkliste.
                   </BodyShort>
 
                   {/* Code Review Image */}
-                  <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative aspect-video">
+                  <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm relative aspect-video">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/github-copilot-code-review-updated.jpeg"
@@ -2446,7 +2507,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         Viktig: CI kjører ikke automatisk
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">
                       PR-er fra Copilot coding agent utløser ikke CI-workflows automatisk. Du må starte dem manuelt
                       eller approve workflow run. Dette er en sikkerhetsfunksjon.
                     </BodyShort>
@@ -2465,7 +2526,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Be Copilot gjennomgå seg selv
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           &quot;Review this PR for bugs, security issues, and code style violations&quot;
                         </BodyShort>
                       </div>
@@ -2473,7 +2534,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                         <BodyShort weight="semibold" className="text-sm">
                           Grupper lignende PR-er
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
                           Gjennomgå flere dokumentasjons-PR-er sammen for konsistens
                         </BodyShort>
                       </div>
@@ -2490,7 +2551,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Verifisering – Nøkkelen til Kvalitet
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     &quot;Gi Copilot en måte å verifisere arbeidet sitt – dette 2-3x kvaliteten.&quot; En god plan er
                     viktig, men verifisering er det som sikrer at resultatet faktisk fungerer.
                   </BodyShort>
@@ -2508,7 +2569,7 @@ formatNOK(1000000) → "1 000 000,00 kr"`}
                           Be om tester i prompten
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                         Inkluder testing som del av oppgaven:
                       </BodyShort>
                       <Box background="default" padding="space-8" borderRadius="4">
@@ -2534,7 +2595,7 @@ før du anser oppgaven som ferdig.`}
                           La Copilot reviewe seg selv
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
                         Etter implementering, be om selvreview:
                       </BodyShort>
                       <Box background="default" padding="space-8" borderRadius="4">
@@ -2562,7 +2623,7 @@ Sjekk for:
                         Knip – Rydd opp etter Copilot
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-sm mb-3">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-3">
                       Copilot kan etterlate ubrukt kode, avhengigheter og exports. Knip finner og fjerner dette
                       automatisk. Brukes av Vercel, Anthropic, Cloudflare og TanStack.
                     </BodyShort>
@@ -2579,14 +2640,14 @@ Sjekk for:
                         <BodyShort weight="semibold" className="text-sm">
                           Hva Knip finner
                         </BodyShort>
-                        <ul className="text-xs text-gray-600 mt-1 space-y-1">
+                        <ul className="text-xs text-gray-600 dark:text-gray-400 mt-1 space-y-1">
                           <li>• Ubrukte filer og exports</li>
                           <li>• Ubrukte npm-avhengigheter</li>
                           <li>• Ubrukte typer og interfaces</li>
                         </ul>
                       </div>
                     </HGrid>
-                    <BodyShort className="text-gray-500 text-xs mt-3">
+                    <BodyShort className="text-gray-500 dark:text-gray-400 text-xs mt-3">
                       &quot;Knip helped us delete ~300k lines of unused code at Vercel.&quot; –{" "}
                       <a
                         href="https://knip.dev/"
@@ -2612,25 +2673,33 @@ Sjekk for:
                         <BodyShort weight="semibold" className="text-sm">
                           1. Tester
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Kjør testsuiten, sjekk coverage</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Kjør testsuiten, sjekk coverage
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-sm">
                           2. Linting
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">ESLint, TypeScript, Prettier</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          ESLint, TypeScript, Prettier
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-sm">
                           3. Knip
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Fjern ubrukt kode og deps</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Fjern ubrukt kode og deps
+                        </BodyShort>
                       </div>
                       <div>
                         <BodyShort weight="semibold" className="text-sm">
                           4. Manuell test
                         </BodyShort>
-                        <BodyShort className="text-gray-600 text-xs">Test i browser/preview</BodyShort>
+                        <BodyShort className="text-gray-600 dark:text-gray-400 text-xs">
+                          Test i browser/preview
+                        </BodyShort>
                       </div>
                     </HGrid>
                   </Box>
@@ -2645,7 +2714,7 @@ Sjekk for:
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Vanlige mønstre for Agent Mode
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Bygg spesialiserte agenter for repeterende oppgaver. Her er seks anbefalte agenter å starte med.
                   </BodyShort>
 
@@ -2657,7 +2726,9 @@ Sjekk for:
                           @docs-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">Dokumentasjonsassistent</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                        Dokumentasjonsassistent
+                      </BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Oppdater README ved API-endringer</li>
                         <li>• Generer JSDoc/docstrings</li>
@@ -2672,7 +2743,7 @@ Sjekk for:
                           @test-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">Testskriving</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">Testskriving</BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Skriv enhetstester for ny kode</li>
                         <li>• Øk testdekning på moduler</li>
@@ -2687,7 +2758,7 @@ Sjekk for:
                           @lint-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">Kodeformatering</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">Kodeformatering</BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Fiks linting-feil</li>
                         <li>• Migrer til ny ESLint-config</li>
@@ -2702,7 +2773,7 @@ Sjekk for:
                           @api-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">API-utvikling</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">API-utvikling</BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Lag nye endepunkter</li>
                         <li>• Generer OpenAPI-spec</li>
@@ -2717,7 +2788,7 @@ Sjekk for:
                           @security-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">Sikkerhetssjekk</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">Sikkerhetssjekk</BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Audit avhengigheter</li>
                         <li>• Finn sikkerhetshull</li>
@@ -2727,12 +2798,12 @@ Sjekk for:
 
                     <Box background="neutral-soft" padding="space-16" borderRadius="8">
                       <div className="flex items-center gap-2 mb-2">
-                        <RocketIcon className="text-gray-700" aria-hidden />
+                        <RocketIcon className="text-gray-700 dark:text-gray-300" aria-hidden />
                         <Heading size="small" level="3">
                           @deploy-agent
                         </Heading>
                       </div>
-                      <BodyShort className="text-gray-600 text-sm mb-2">Dev/Deploy-hjelp</BodyShort>
+                      <BodyShort className="text-gray-600 dark:text-gray-400 text-sm mb-2">Dev/Deploy-hjelp</BodyShort>
                       <ul className="space-y-1 text-xs">
                         <li>• Oppdater Dockerfile</li>
                         <li>• Fiks CI-config</li>
@@ -2749,7 +2820,7 @@ Sjekk for:
                         Eksempel: .github/agents/test-agent.agent.md
                       </Heading>
                     </div>
-                    <BodyShort className="text-gray-600 text-xs mb-2">
+                    <BodyShort className="text-gray-600 dark:text-gray-400 text-xs mb-2">
                       Følger GitHub sin anbefalte rekkefølge: Kommandoer → Testing → Prosjektstruktur → Kodestil →
                       Git-workflow → Grenser
                     </BodyShort>
@@ -2796,7 +2867,7 @@ description: Skriver tester for dette prosjektet
                   <LinkableHeading size="large" level="2" className="mb-4">
                     Ressurser
                   </LinkableHeading>
-                  <BodyShort className="text-gray-600 mb-6">
+                  <BodyShort className="text-gray-600 dark:text-gray-400 mb-6">
                     Offisielle kilder, fellesskapsressurser og Nav-spesifikk dokumentasjon.
                   </BodyShort>
 
@@ -2924,17 +2995,17 @@ description: Skriver tester for dette prosjektet
 
                     <Box background="neutral-soft" padding="space-16" borderRadius="8">
                       <div className="flex items-center gap-2 mb-2">
-                        <CogIcon className="text-gray-600" aria-hidden />
+                        <CogIcon className="text-gray-600 dark:text-gray-400" aria-hidden />
                         <Heading size="small" level="3">
                           Verifiseringsverktøy
                         </Heading>
                       </div>
                       <ul className="space-y-2">
                         <li className="flex gap-2">
-                          <span className="text-gray-600">▪</span>
+                          <span className="text-gray-600 dark:text-gray-400">▪</span>
                           <a
                             href="https://knip.dev/"
-                            className="text-gray-600 hover:underline text-sm"
+                            className="text-gray-600 dark:text-gray-400 hover:underline text-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -2942,10 +3013,10 @@ description: Skriver tester for dette prosjektet
                           </a>
                         </li>
                         <li className="flex gap-2">
-                          <span className="text-gray-600">▪</span>
+                          <span className="text-gray-600 dark:text-gray-400">▪</span>
                           <a
                             href="https://knip.dev/blog/for-editors-and-agents"
-                            className="text-gray-600 hover:underline text-sm"
+                            className="text-gray-600 dark:text-gray-400 hover:underline text-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -3042,7 +3113,7 @@ description: Skriver tester for dette prosjektet
                       Tips
                     </Heading>
                   </div>
-                  <BodyShort className="text-gray-700 text-sm">
+                  <BodyShort className="text-gray-700 dark:text-gray-300 text-sm">
                     Copilot utvikles raskt – hold deg oppdatert via GitHub Blog og awesome-copilot. Husk at agenten er
                     et verktøy: du eier arkitekturen, den implementerer.
                   </BodyShort>

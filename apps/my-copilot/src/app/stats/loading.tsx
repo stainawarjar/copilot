@@ -7,13 +7,13 @@ export default function Loading() {
         <Heading size="xlarge" level="1" className="mb-2">
           Copilot Statistikk
         </Heading>
-        <div className="text-gray-600 mb-12">
+        <div className="text-gray-600 dark:text-gray-400 mb-12">
           <Skeleton variant="text" width="60%" />
         </div>
 
         {/* Tab skeleton */}
-        <div className="border-b border-gray-200">
-          <nav className="flex space-x-2 bg-gray-50 rounded-t-lg p-1">
+        <div className="border-b border-gray-200 dark:border-gray-700">
+          <nav className="flex space-x-2 bg-gray-50 dark:bg-gray-800 rounded-t-lg p-1">
             <Skeleton variant="rectangle" height={36} width={100} />
             <Skeleton variant="rectangle" height={36} width={150} />
             <Skeleton variant="rectangle" height={36} width={130} />
@@ -22,7 +22,7 @@ export default function Loading() {
         </div>
 
         {/* Content skeleton */}
-        <div className="bg-white rounded-b-lg rounded-tr-lg border border-gray-200 border-t-0 p-6 shadow-sm">
+        <div className="bg-white dark:bg-gray-800 rounded-b-lg rounded-tr-lg border border-gray-200 dark:border-gray-700 border-t-0 p-6 shadow-sm">
           <Skeleton variant="text" width="40%" className="mb-6" />
 
           <HGrid columns={4} gap="space-16" className="mb-6">

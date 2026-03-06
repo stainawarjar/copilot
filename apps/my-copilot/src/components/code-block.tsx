@@ -31,7 +31,7 @@ export function CodeBlock({ filename, children, maxHeight }: CodeBlockProps) {
             <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
             <div className="w-3 h-3 rounded-full bg-[#28c840]" />
           </div>
-          <span className="text-gray-400 text-xs font-mono" style={{ marginLeft: "8px" }}>
+          <span className="text-gray-400 dark:text-gray-500 text-xs font-mono" style={{ marginLeft: "8px" }}>
             {filename}
           </span>
         </Box>
@@ -90,11 +90,13 @@ export function CodeBlock({ filename, children, maxHeight }: CodeBlockProps) {
                     <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
                     <div className="w-3 h-3 rounded-full bg-[#28c840]" />
                   </div>
-                  <DialogTitle className="text-gray-300 text-sm ml-2 font-mono">{filename}</DialogTitle>
+                  <DialogTitle className="text-gray-300 dark:text-gray-600 text-sm ml-2 font-mono">
+                    {filename}
+                  </DialogTitle>
                 </div>
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
                   aria-label="Lukk modal"
                 >
                   <XMarkIcon className="w-5 h-5" />

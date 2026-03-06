@@ -51,19 +51,19 @@ export const createGradient = (ctx: CanvasRenderingContext2D, color: string, hei
   return gradient;
 };
 
-// GitHub-style grid options
-const githubGridStyle = {
-  color: "rgba(0, 0, 0, 0.06)",
+// GitHub-style grid options (theme-aware)
+const getGridStyle = (isDark: boolean) => ({
+  color: isDark ? "rgba(255, 255, 255, 0.08)" : "rgba(0, 0, 0, 0.06)",
   drawBorder: false,
-};
+});
 
-const githubTickStyle = {
-  color: "#6B7280",
+const getTickStyle = (isDark: boolean) => ({
+  color: isDark ? "#9CA3AF" : "#6B7280",
   font: { size: 11 },
-};
+});
 
-// Common chart options with GitHub styling
-export const commonLineOptions = {
+// Common chart options with GitHub styling (theme-aware)
+export const getCommonLineOptions = (isDark: boolean) => ({
   responsive: true,
   maintainAspectRatio: true,
   interaction: {
@@ -78,10 +78,11 @@ export const commonLineOptions = {
         pointStyle: "circle",
         padding: 20,
         font: { size: 12 },
+        color: isDark ? "#D1D5DB" : "#374151",
       },
     },
     tooltip: {
-      backgroundColor: "rgba(0, 0, 0, 0.8)",
+      backgroundColor: isDark ? "rgba(17, 24, 39, 0.95)" : "rgba(0, 0, 0, 0.8)",
       padding: 12,
       titleFont: { size: 13 },
       bodyFont: { size: 12 },
@@ -92,19 +93,19 @@ export const commonLineOptions = {
     y: {
       beginAtZero: true,
       border: { display: false },
-      grid: githubGridStyle,
-      ticks: githubTickStyle,
+      grid: getGridStyle(isDark),
+      ticks: getTickStyle(isDark),
     },
     x: {
       border: { display: false },
       grid: { display: false },
-      ticks: githubTickStyle,
+      ticks: getTickStyle(isDark),
     },
   },
-};
+});
 
-// Donut chart options
-export const commonDonutOptions = {
+// Donut chart options (theme-aware)
+export const getCommonDonutOptions = (isDark: boolean) => ({
   responsive: true,
   maintainAspectRatio: true,
   cutout: "60%",
@@ -116,18 +117,19 @@ export const commonDonutOptions = {
         pointStyle: "circle",
         padding: 16,
         font: { size: 12 },
+        color: isDark ? "#D1D5DB" : "#374151",
       },
     },
     tooltip: {
-      backgroundColor: "rgba(0, 0, 0, 0.8)",
+      backgroundColor: isDark ? "rgba(17, 24, 39, 0.95)" : "rgba(0, 0, 0, 0.8)",
       padding: 12,
       cornerRadius: 8,
     },
   },
-};
+});
 
 // Common chart wrapper styling
-export const chartWrapperClass = "bg-white p-4 rounded-lg border border-gray-200";
+export const chartWrapperClass = "bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700";
 
 // Default no data message
 export const NO_DATA_MESSAGE = "Ingen data tilgjengelig for visning";

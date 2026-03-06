@@ -43,16 +43,18 @@ async function BillingOverview() {
         <Heading size="medium" level="2" className="mb-4">
           Lisensfordeling
         </Heading>
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+          <thead className="bg-gray-50 dark:bg-gray-800">
             <tr>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                 Beskrivelse
               </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Verdi</th>
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                Verdi
+              </th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
             <tr>
               <td className="px-4 py-3 whitespace-nowrap">Totalt antall lisenser</td>
               <td className="px-4 py-3 whitespace-nowrap font-semibold">{billing.seat_breakdown.total}</td>
@@ -77,7 +79,7 @@ async function BillingOverview() {
             </tr>
             <tr>
               <td className="px-4 py-3 whitespace-nowrap">Inaktiv denne perioden</td>
-              <td className="px-4 py-3 whitespace-nowrap text-gray-500">
+              <td className="px-4 py-3 whitespace-nowrap text-gray-500 dark:text-gray-400">
                 {billing.seat_breakdown.inactive_this_cycle}
               </td>
             </tr>
@@ -95,16 +97,18 @@ async function BillingOverview() {
         <Heading size="medium" level="2" className="mb-4">
           Organisasjonsinnstillinger
         </Heading>
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+          <thead className="bg-gray-50 dark:bg-gray-800">
             <tr>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                 Innstilling
               </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Verdi</th>
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                Verdi
+              </th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
             <tr>
               <td className="px-4 py-3 whitespace-nowrap">Administrasjon av lisenser</td>
               <td className="px-4 py-3 whitespace-nowrap font-semibold capitalize">

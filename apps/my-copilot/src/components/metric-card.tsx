@@ -32,11 +32,11 @@ export default function MetricCard({
       background="default"
       padding="space-20"
       borderRadius="8"
-      className={`border border-gray-200 border-l-4 ${colorClass.split(" ")[0]}`}
+      className={`border border-gray-200 dark:border-gray-700 border-l-4 ${colorClass.split(" ")[0]}`}
     >
       <VStack gap="space-2">
         <div className="flex items-center">
-          <BodyShort className="text-gray-600 text-sm">{label}</BodyShort>
+          <BodyShort className="text-gray-600 dark:text-gray-400 text-sm">{label}</BodyShort>
           <HelpText title={helpTitle} placement="top">
             {helpText}
           </HelpText>
@@ -44,7 +44,7 @@ export default function MetricCard({
         <Heading size="xlarge" level="2" className={textColorClass}>
           {value}
         </Heading>
-        {subtitle && <BodyShort className="text-gray-500 text-sm">{subtitle}</BodyShort>}
+        {subtitle && <BodyShort className="text-gray-500 dark:text-gray-400 text-sm">{subtitle}</BodyShort>}
       </VStack>
     </Box>
   );

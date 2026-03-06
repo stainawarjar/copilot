@@ -95,7 +95,7 @@ export function CustomizationCatalog({ items }: CustomizationCatalogProps) {
         </Chips>
       </HStack>
 
-      <BodyShort size="small" className="text-gray-500">
+      <BodyShort size="small" className="text-gray-500 dark:text-gray-400">
         {filtered.length} av {items.length} tilpasninger
       </BodyShort>
 
@@ -107,7 +107,7 @@ export function CustomizationCatalog({ items }: CustomizationCatalogProps) {
 
       {filtered.length === 0 && (
         <Box padding="space-24" className="text-center">
-          <BodyShort className="text-gray-500">Ingen tilpasninger matcher søket ditt.</BodyShort>
+          <BodyShort className="text-gray-500 dark:text-gray-400">Ingen tilpasninger matcher søket ditt.</BodyShort>
         </Box>
       )}
     </VStack>

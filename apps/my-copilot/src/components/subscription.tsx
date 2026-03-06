@@ -180,12 +180,12 @@ const SubscriptionDetails: React.FC<{ user: User; showGroups?: boolean }> = ({ u
             </BodyShort>
           ) : (
             <VStack gap="space-4" role="status" className="max-w-sm animate-pulse">
-              <div className="h-6 bg-gray-200 rounded-full dark:bg-gray-700 w-48"></div>
-              <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 max-w-90"></div>
-              <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-              <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 max-w-82.5"></div>
-              <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 max-w-75"></div>
-              <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 max-w-90"></div>
+              <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 w-48"></div>
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 max-w-90"></div>
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700"></div>
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 max-w-82.5"></div>
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 max-w-75"></div>
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 max-w-90"></div>
               <span className="sr-only">Loading...</span>
             </VStack>
           )}
@@ -210,7 +210,7 @@ const SubscriptionDetails: React.FC<{ user: User; showGroups?: boolean }> = ({ u
                 </span>
               ) : (
                 <div role="status" className="inline-block animate-pulse" style={{ marginLeft: "8px" }}>
-                  <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                  <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded-full dark:bg-gray-700 w-32"></div>
                 </div>
               )}
             </div>

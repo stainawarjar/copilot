@@ -6,7 +6,7 @@ export default function NotFound() {
       <Heading size="xlarge" level="1">
         404
       </Heading>
-      <BodyShort className="text-gray-600">Siden du leter etter finnes ikke.</BodyShort>
+      <BodyShort className="text-gray-600 dark:text-gray-400">Siden du leter etter finnes ikke.</BodyShort>
       <Link href="/">Gå til forsiden</Link>
     </main>
   );

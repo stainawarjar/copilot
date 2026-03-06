@@ -53,19 +53,19 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
         </Heading>
         <HGrid columns={3} gap="space-16">
           <div>
-            <BodyShort className="text-gray-600 mb-1">Bruttokostnad</BodyShort>
+            <BodyShort className="text-gray-600 dark:text-gray-400 mb-1">Bruttokostnad</BodyShort>
             <Heading size="medium" level="4">
               ${metrics.totalGrossAmount.toFixed(2)}
             </Heading>
           </div>
           <div>
-            <BodyShort className="text-gray-600 mb-1">Rabatt</BodyShort>
+            <BodyShort className="text-gray-600 dark:text-gray-400 mb-1">Rabatt</BodyShort>
             <Heading size="medium" level="4" className="text-green-600">
               -${metrics.totalDiscountAmount.toFixed(2)}
             </Heading>
           </div>
           <div>
-            <BodyShort className="text-gray-600 mb-1">Nettokostnad</BodyShort>
+            <BodyShort className="text-gray-600 dark:text-gray-400 mb-1">Nettokostnad</BodyShort>
             <Heading size="medium" level="4">
               ${metrics.totalNetAmount.toFixed(2)}
             </Heading>
@@ -77,7 +77,7 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
         <Heading size="medium" level="3" className="mb-4">
           AI-modeller og bruk
         </Heading>
-        <BodyShort className="text-gray-600 mb-4">
+        <BodyShort className="text-gray-600 dark:text-gray-400 mb-4">
           Oversikt over hvilke AI-modeller som har blitt brukt og deres tilhørende kostnader. Ulike modeller har
           forskjellige priser per forespørsel basert på deres kapasitet og ytelse.
         </BodyShort>
@@ -89,7 +89,7 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
               <TableHeaderCell scope="col">
                 <div className="flex items-center gap-1">
                   Antall forespørsler
-                  <div className="text-gray-900">
+                  <div className="text-gray-900 dark:text-white">
                     <HelpText title="Antall forespørsler" placement="top">
                       Totalt antall forespørsler gjort til denne modellen i perioden.
                     </HelpText>
@@ -99,7 +99,7 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
               <TableHeaderCell scope="col">
                 <div className="flex items-center gap-1">
                   Bruttokostnad
-                  <div className="text-gray-900">
+                  <div className="text-gray-900 dark:text-white">
                     <HelpText title="Bruttokostnad" placement="top">
                       Totalkostnad for forespørslene til denne modellen før rabatt.
                     </HelpText>
@@ -131,7 +131,7 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
           <Heading size="medium" level="3" className="mb-3">
             Hva er premiumforespørsler?
           </Heading>
-          <BodyShort className="text-gray-600">
+          <BodyShort className="text-gray-600 dark:text-gray-400">
             Premiumforespørsler gir deg tilgang til avanserte AI-modeller og funksjonalitet i GitHub Copilot. Dette
             inkluderer Copilot Chat med premium-modeller, større kontekstvinduer, avanserte resonnementmodeller, og
             funksjoner som Copilot coding agent.
@@ -143,16 +143,16 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
             Hvordan måles bruken?
           </Heading>
           <div className="space-y-3">
-            <BodyShort className="text-gray-600">
+            <BodyShort className="text-gray-600 dark:text-gray-400">
               <strong>Månedlig kvote:</strong> Hver lisens inkluderer et fast antall premiumforespørsler per bruker per
               måned. Kvoten nullstilles den 1. i hver måned kl. 00:00:00 UTC.
             </BodyShort>
-            <BodyShort className="text-gray-600">
+            <BodyShort className="text-gray-600 dark:text-gray-400">
               <strong>Modellmultiplikatorer:</strong> Noen modeller bruker multiplikatorer, noe som betyr at én
               interaksjon kan telle som flere premiumforespørsler. For eksempel kan avanserte resonnementmodeller
               forbruke 5× eller 20× standardraten.
             </BodyShort>
-            <BodyShort className="text-gray-600">
+            <BodyShort className="text-gray-600 dark:text-gray-400">
               <strong>Copilot coding agent:</strong> Hver coding agent-økt forbruker én premiumforespørsel. En økt
               starter når du ber Copilot om å opprette en pull request eller gjøre endringer i en eksisterende PR.
             </BodyShort>
@@ -163,10 +163,10 @@ export default function PremiumRequestsContent({ metrics }: PremiumRequestsConte
           <Heading size="small" level="4" className="mb-3">
             Hva skjer hvis vi bruker mer enn kvoten?
           </Heading>
-          <BodyShort className="text-gray-600 mb-2">
+          <BodyShort className="text-gray-600 dark:text-gray-400 mb-2">
             Hvis organisasjonen overskrider den inkluderte kvoten, har administratorer mulighet til å:
           </BodyShort>
-          <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
+          <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1 ml-4">
             <li>Sette et budsjett for ekstra premiumforespørsler</li>
             <li>Konfigurere retningslinjer for om medlemmer kan overskride kvoten</li>
             <li>Motta varsler ved 75%, 90% og 100% av budsjettet</li>

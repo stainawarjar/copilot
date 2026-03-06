@@ -1,12 +1,14 @@
 "use client";
 
+import { useTheme } from "next-themes";
+
 import { CopilotMetrics } from "@/lib/github";
 import React from "react";
 import { Line } from "react-chartjs-2";
 import {
   chartColors,
   getBackgroundColor,
-  commonLineOptions,
+  getCommonLineOptions,
   chartWrapperClass,
   NO_DATA_MESSAGE,
 } from "@/lib/chart-utils";
@@ -17,10 +19,12 @@ interface LanguagesChartProps {
 }
 
 const LanguagesChart: React.FC<LanguagesChartProps> = ({ usage }) => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
   if (!usage || usage.length === 0) {
     return (
       <div className={chartWrapperClass}>
-        <div className="text-center text-gray-500 py-8">{NO_DATA_MESSAGE}</div>
+        <div className="text-center text-gray-500 dark:text-gray-400 py-8">{NO_DATA_MESSAGE}</div>
       </div>
     );
   }
@@ -41,7 +45,9 @@ const LanguagesChart: React.FC<LanguagesChartProps> = ({ usage }) => {
   if (topLanguages.length === 0) {
     return (
       <div className={chartWrapperClass}>
-        <div className="text-center text-gray-500 py-8">Ingen språkdata tilgjengelig for visning</div>
+        <div className="text-center text-gray-500 dark:text-gray-400 py-8">
+          Ingen språkdata tilgjengelig for visning
+        </div>
       </div>
     );
   }
@@ -63,9 +69,9 @@ const LanguagesChart: React.FC<LanguagesChartProps> = ({ usage }) => {
   };
 
   const lineOptions = {
-    ...commonLineOptions,
+    ...getCommonLineOptions(isDark),
     plugins: {
-      ...commonLineOptions.plugins,
+      ...getCommonLineOptions(isDark).plugins,
       title: {
         display: true,
         text: "Topp programmeringsspråk over tid",

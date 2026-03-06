@@ -54,7 +54,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab }) => {
   return (
     <div className="w-full">
       {/* Tab Navigation */}
-      <div className="border-b border-gray-200">
+      <div className="border-b border-gray-200 dark:border-gray-700">
         <Box as="nav" padding="space-2" background="neutral-soft" className="rounded-t-lg" role="tablist">
           <div className="flex" style={{ gap: "8px" }}>
             {tabs.map((tab) => (
@@ -67,8 +67,8 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab }) => {
                 disabled={isPending}
                 className={`rounded-md font-medium text-sm transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 disabled:opacity-50 ${
                   activeTab === tab.id
-                    ? "bg-white text-blue-600 shadow-sm border border-gray-200 border-b-white -mb-px relative z-10"
-                    : "text-gray-600 hover:text-gray-800 hover:bg-gray-100 cursor-pointer"
+                    ? "bg-white dark:bg-gray-800 text-blue-600 shadow-sm border border-gray-200 dark:border-gray-700 border-b-white -mb-px relative z-10"
+                    : "text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:bg-gray-900 cursor-pointer"
                 }`}
                 style={{ padding: "8px 16px" }}
               >
@@ -84,7 +84,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab }) => {
         as="div"
         padding="space-12"
         background="default"
-        className="rounded-b-lg rounded-tr-lg border border-gray-200 border-t-0 shadow-sm min-h-[400px] relative"
+        className="rounded-b-lg rounded-tr-lg border border-gray-200 dark:border-gray-700 border-t-0 shadow-sm min-h-[400px] relative"
         role="tabpanel"
         id={`tabpanel-${activeTab}`}
         aria-labelledby={`tab-${activeTab}`}

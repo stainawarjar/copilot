@@ -1,9 +1,12 @@
 "use client";
 
+import { useTheme } from "next-themes";
+
 import { CopilotMetrics } from "@/lib/github";
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
+import { getCommonLineOptions } from "@/lib/chart-utils";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -12,6 +15,8 @@ interface ChatChartProps {
 }
 
 const ChatChart: React.FC<ChatChartProps> = ({ usage }) => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
   if (!usage || usage.length === 0) {
     return <div>Ingen data tilgjengelig for visning</div>;
   }
@@ -59,25 +64,18 @@ const ChatChart: React.FC<ChatChartProps> = ({ usage }) => {
   };
 
   const barOptions = {
-    responsive: true,
+    ...getCommonLineOptions(isDark),
     plugins: {
-      legend: {
-        position: "top" as const,
-      },
+      ...getCommonLineOptions(isDark).plugins,
       title: {
         display: true,
         text: "Chat aktivitet per editor",
       },
     },
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg border border-gray-200">
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
       <Bar data={chatData} options={barOptions} />
     </div>
   );

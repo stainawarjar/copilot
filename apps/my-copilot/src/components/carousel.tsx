@@ -46,7 +46,7 @@ export function Carousel({ children, showIndicators = true, showSwipeHint = true
       {showSwipeHint && (
         <VStack gap="space-6">
           <div className="flex items-center justify-between">
-            <BodyShort className="text-gray-500 text-xs flex items-center">
+            <BodyShort className="text-gray-500 dark:text-gray-400 text-xs flex items-center">
               <span>←</span> Swipe for flere eksempler <span>→</span>
             </BodyShort>
             {showIndicators && (

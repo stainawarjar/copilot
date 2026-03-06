@@ -1,9 +1,11 @@
 "use client";
 
+import { useTheme } from "next-themes";
+
 import { CopilotMetrics } from "@/lib/github";
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { chartColors, commonDonutOptions, chartWrapperClass, NO_DATA_MESSAGE } from "@/lib/chart-utils";
+import { chartColors, getCommonDonutOptions, chartWrapperClass, NO_DATA_MESSAGE } from "@/lib/chart-utils";
 import { Heading } from "@navikt/ds-react";
 import { TooltipItem } from "chart.js";
 
@@ -17,10 +19,12 @@ interface ModelStats {
 }
 
 const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ usage }) => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
   if (!usage || usage.length === 0) {
     return (
       <div className={chartWrapperClass}>
-        <div className="text-center text-gray-500 py-8">{NO_DATA_MESSAGE}</div>
+        <div className="text-center text-gray-500 dark:text-gray-400 py-8">{NO_DATA_MESSAGE}</div>
       </div>
     );
   }
@@ -64,7 +68,7 @@ const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ usage }) => {
   if (modelStats.length === 0) {
     return (
       <div className={chartWrapperClass}>
-        <div className="text-center text-gray-500 py-8">{NO_DATA_MESSAGE}</div>
+        <div className="text-center text-gray-500 dark:text-gray-400 py-8">{NO_DATA_MESSAGE}</div>
       </div>
     );
   }
@@ -85,11 +89,11 @@ const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ usage }) => {
   };
 
   const options = {
-    ...commonDonutOptions,
+    ...getCommonDonutOptions(isDark),
     plugins: {
-      ...commonDonutOptions.plugins,
+      ...getCommonDonutOptions(isDark).plugins,
       tooltip: {
-        ...commonDonutOptions.plugins.tooltip,
+        ...getCommonDonutOptions(isDark).plugins.tooltip,
         callbacks: {
           label: (context: TooltipItem<"doughnut">) => {
             const value = context.raw as number;

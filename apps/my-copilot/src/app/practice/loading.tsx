@@ -7,7 +7,7 @@ export default function Loading() {
         <Heading size="xlarge" level="1" className="mb-2">
           God praksis
         </Heading>
-        <BodyShort className="text-gray-600 mb-12">
+        <BodyShort className="text-gray-600 dark:text-gray-400 mb-12">
           <Skeleton variant="text" width="60%" />
         </BodyShort>
 

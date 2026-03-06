@@ -26,7 +26,7 @@ export function NewsCard({ item }: { item: NewsItem }) {
       borderWidth="1"
       borderRadius={isArticle ? "12" : "8"}
       padding={isArticle ? { xs: "space-20", md: "space-24" } : "space-16"}
-      className={isArticle ? "sm:col-span-2 md:col-span-2" : undefined}
+      className={`bg-white dark:bg-[#1e2a3a] ${isArticle ? "sm:col-span-2 md:col-span-2" : ""}`}
       asChild
     >
       <NextLink

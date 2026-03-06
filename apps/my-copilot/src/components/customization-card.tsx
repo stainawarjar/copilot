@@ -85,11 +85,15 @@ export function CustomizationCard({ item }: CustomizationCardProps) {
         </div>
 
         {item.type === "instruction" && (
-          <code className="text-xs bg-gray-100 rounded px-2 py-1 inline-block w-fit">{item.applyTo}</code>
+          <code className="text-xs bg-gray-100 dark:bg-gray-900 rounded px-2 py-1 inline-block w-fit">
+            {item.applyTo}
+          </code>
         )}
 
         {item.type === "prompt" && (
-          <code className="text-xs bg-gray-100 rounded px-2 py-1 inline-block w-fit">{item.invocation}</code>
+          <code className="text-xs bg-gray-100 dark:bg-gray-900 rounded px-2 py-1 inline-block w-fit">
+            {item.invocation}
+          </code>
         )}
 
         {item.type === "mcp" && item.remotes.length > 0 && (
@@ -102,7 +106,7 @@ export function CustomizationCard({ item }: CustomizationCardProps) {
           </HStack>
         )}
 
-        <BodyShort size="small" className="text-gray-600 line-clamp-3">
+        <BodyShort size="small" className="text-gray-600 dark:text-gray-400 line-clamp-3">
           {item.description}
         </BodyShort>
 
@@ -114,6 +118,15 @@ export function CustomizationCard({ item }: CustomizationCardProps) {
             >
               <DownloadIcon fontSize="1rem" aria-hidden />
               Installer
+            </a>
+          )}
+
+          {item.insidersInstallUrl && (
+            <a
+              href={item.insidersInstallUrl}
+              className="inline-flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:underline"
+            >
+              Insiders
             </a>
           )}
 

@@ -30,7 +30,9 @@ export function DomainCard({ domain, count, selected, onClick }: DomainCardProps
       type="button"
       onClick={() => onClick(domain)}
       className={`text-left w-full h-full rounded-xl transition-all cursor-pointer border-2 ${
-        selected ? "border-blue-500 ring-2 ring-blue-200" : "border-transparent hover:border-gray-300"
+        selected
+          ? "border-blue-500 ring-2 ring-blue-200"
+          : "border-transparent hover:border-gray-300 dark:border-gray-600"
       }`}
     >
       <Box
@@ -42,12 +44,12 @@ export function DomainCard({ domain, count, selected, onClick }: DomainCardProps
         <VStack gap="space-8">
           <div className="flex items-center justify-between">
             {DOMAIN_ICONS[domain]}
-            <span className="text-sm font-semibold text-gray-500">{count}</span>
+            <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">{count}</span>
           </div>
           <Heading size="small" level="3">
             {config.label}
           </Heading>
-          <BodyShort size="small" className="text-gray-600">
+          <BodyShort size="small" className="text-gray-600 dark:text-gray-400">
             {config.description}
           </BodyShort>
         </VStack>
